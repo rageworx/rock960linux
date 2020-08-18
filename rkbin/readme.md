@@ -1,8 +1,8 @@
 # Rockchip loader binaries naming rule
 
 ## General rules:
-*Regardless of the single module or the merged loader, the naming is adopted
-    [chip]_[module]_[feature]_[version].[postfix]
+* Regardless of the single module or the merged loader, the naming is adopted
+    `[chip]_[module]_[feature]_[version].[postfix]`
 
 ### chip: 
 Chip or chip series name, required option, consistent with the names in all kernel/uboot drivers, specific naming methods are not discussed here, lowercase
