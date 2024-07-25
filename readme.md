@@ -12,6 +12,18 @@
 	```
 * it may takes long time.
 
+## Make prebuilts + prepare cross compiler
+* Create these directories
+    ```
+    prebuilts/gcc/linux-x86/aarch64/
+    ```
+* And download gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu from [here](https://developer.arm.com/downloads/-/gnu-a#panel4a).
+* Extrct gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu.tar.xz to `prebuilts/gcc/linux-86/aarch64`.
+* Then once you need run this:
+    ```
+	export PATH=$PATH:$PWD/prebuilts/gcc/linux-x86/aarch64/gcc-arm-8.3-2019.03-x86_64-aarch64-linux-gnu/bin
+	```
+
 ## Build kernel first ( before u-boot )
 * Rock960A/B
 	```
