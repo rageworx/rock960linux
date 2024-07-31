@@ -31,7 +31,7 @@ echo -e "\e[36m Building kernel for ${BOARD} board! \e[0m"
 cd ${LOCALPATH}/kernel
 [ ! -e .config ] && echo -e "\e[36m Using ${DEFCONFIG} \e[0m" && make ${DEFCONFIG}
 
-make -j2
+make -i -j4
 cd ${LOCALPATH}
 
 KERNEL_VERSION=$(cat ${LOCALPATH}/kernel/include/config/kernel.release)

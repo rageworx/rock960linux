@@ -1,8 +1,10 @@
-# A customized rk3399 debian linux aarch64 collection repository
+# A customized rk3399 Linux aarch64 collection repository
 
 ## Target
-* aarch64 debian linux board,
-	* 96board, Rock960A/B/C.
+* VAMR Rock960 board ( or others too )
+	* 96board, Rock960A/B and C.
+	* Kernel 5.10
+	* Debian 11, bullseye
 
 ## First initializing submodules
 * do these sequence at first time,
@@ -45,7 +47,7 @@
 	```
 
 ## Build rootfs
-* First time you need to do this for making a file 'linaro-stretch-alip-${datetime}.tar.gz'.
+* First time you need to do this for making a file 'linaro-bullesys-alip-${datetime}.tar.gz'.
 	```
 	$ cd rootfs
 	$ ./mk-base-debian.sh
@@ -53,7 +55,7 @@
 * You can skip above step if have tar.gz file.
 * Then create stretch base updates for Rock960 board,
 	```
-	$ ./mk-rootfs-stretch-arm64.sh
+	$ ./mk-rootfs-bullseye.sh
 	```
 * This sequence extract base tar.gz to binary directory, and copying overlay contents into binary.
 * Then final step for this
@@ -70,3 +72,4 @@
 	```
 	$ build/mk-image.sh -c rk3399 -t system -r rootfs/linaro-rootfs.img
 	```
+* Then should flash system.img to zero address via rkdeveloptool.
