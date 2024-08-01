@@ -4,6 +4,7 @@ LOCALPATH=$(pwd)
 OUT=${LOCALPATH}/out
 EXTLINUXPATH=${LOCALPATH}/build/extlinux
 BOARD=$1
+NPS=`nproc`
 
 version_gt() { test "$(echo "$@" | tr " " "\n" | sort -V | head -n 1)" != "$1"; }
 
@@ -31,7 +32,7 @@ echo -e "\e[36m Building kernel for ${BOARD} board! \e[0m"
 cd ${LOCALPATH}/kernel
 [ ! -e .config ] && echo -e "\e[36m Using ${DEFCONFIG} \e[0m" && make ${DEFCONFIG}
 
-make -i -j4
+make -i -j$(NPS)
 cd ${LOCALPATH}
 
 KERNEL_VERSION=$(cat ${LOCALPATH}/kernel/include/config/kernel.release)
