@@ -5,6 +5,7 @@
 	* 96board, Rock960A/B and C.
 	* Kernel 5.10
 	* Debian 11, bullseye
+	* exFAT support in kernel (4.4.179)
 
 ## First initializing submodules
 * do these sequence at first time,
@@ -53,7 +54,7 @@
 	$ ./mk-base-debian.sh
 	```
 * You can skip above step if have tar.gz file.
-* Then create stretch base updates for Rock960 board,
+* Then create debian bullseye base updates for Rock960 board,
 	```
 	$ ./mk-rootfs-bullseye.sh
 	```

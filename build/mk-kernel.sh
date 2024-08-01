@@ -32,7 +32,7 @@ echo -e "\e[36m Building kernel for ${BOARD} board! \e[0m"
 cd ${LOCALPATH}/kernel
 [ ! -e .config ] && echo -e "\e[36m Using ${DEFCONFIG} \e[0m" && make ${DEFCONFIG}
 
-make -i -j$(NPS)
+make -i -j$NPS
 cd ${LOCALPATH}
 
 KERNEL_VERSION=$(cat ${LOCALPATH}/kernel/include/config/kernel.release)
