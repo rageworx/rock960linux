@@ -2,10 +2,10 @@
 
 ## Target
 * VAMR Rock960 board ( or others too )
-	* 96board, Rock960A/B and C.
-	* Kernel 5.10
-	* Debian 11, bullseye
-	* exFAT support in kernel (4.4.179)
+	* 96board, Rock960A/B and C ( model C is still testing )
+	* Enhanced Kernel 4.4.179 ( now upgrading to 5.10 )
+	* Debian 11, bullseye ( completed upgraded )
+	* exFAT support in kernel 4.4.179
 
 ## First initializing submodules
 * do these sequence at first time,
