@@ -4,3 +4,6 @@
 [submodule "rootfs"]
 	path = rootfs
 	url = https://github.com/rageworx/rk3399-debian11.git
+[submodule "kernel"]
+	path = kernel
+	url = https://github.com/rageworx/rk3399_linux_kernel_4.4.194.git
