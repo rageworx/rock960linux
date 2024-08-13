@@ -6,6 +6,7 @@
 	* Enhanced Kernel 4.4.194 ( now upgrading to 5.10 )
 	* Debian 11, bullseye ( completed upgraded )
 	* exFAT support in kernel 4.4.194
+	    - exFAT source by [ater97](https://github.com/arter97/exfat-linux/tree/old)
 
 ## First initializing submodules
 * do these sequence at first time,
