@@ -1,9 +1,11 @@
 [submodule "u-boot"]
 	path = u-boot
-	url = git@github.com:rageworx/rk3399_uboot.git
+	url = https://github.com/rageworx/rk3399_uboot.git
 [submodule "rootfs"]
 	path = rootfs
-	url = https://github.com/rageworx/rk3399-debian11.git
+	url = https://github.com/rageworx/rk3399_rock960_debian_rootfs.git
+	branch = debian-12-bookworm
 [submodule "kernel"]
 	path = kernel
-	url = https://github.com/rageworx/rk3399_linux_kernel_4.4.194.git
+	url = https://github.com/rageworx/rk3399_linux_kernel.git
+	branch = dev/5.10.66
