@@ -8,4 +8,4 @@
 [submodule "kernel"]
 	path = kernel
 	url = https://github.com/rageworx/rk3399_linux_kernel.git
-	branch = dev/5.10.66
+	branch = dev/5.10.131+
